@@ -11,6 +11,114 @@
 </head>
 <body>
     <div id="main">
+        <div id="header">
+            <img src="./assets/img/logo.png" alt="Logo" class="logo-nav">
+            <ul class="tool-kit">
+                <li><span id="btn-search" class="ti-search btn-search">
+                </span>
+                <input id="input-search" type="text" placeholder="Tìm kiếm sản phẩm..." name="" id="" class="tool-kit_input-search">
+            </li>
+                <li><span class="ti-layers-alt profile-main">
+
+                    <div class="profile">
+                        <div class="profile-not_login"> 
+                            <h2 class="profile-title">Đăng Nhập</h2>
+                            <div class="profile_form-login">
+                                <input class="form-login" placeholder="Nhập tài khoản" type="text" name="" id="">
+
+                                <input class="form-login" placeholder="Nhập mật khẩu" type="password" name="" id="">
+                                
+                            </div>
+
+                            <input type="button" class="btn btn-login" value="Đăng Nhập">
+                            <span>Chưa có tài khoản <a href="/Register.html">Đăng ký ngay</a></span>
+                        </div>
+                        <div class="profile-login dp-none">
+                            <div class="profile-user">
+                                <img src="./assets/img/h2_cate_3.jpg" alt="" class="profile-image">
+                                <p class="name-user">Ngô Thanh Bắp</p>
+                            </div>
+                            <ul class="proifle-infomation">
+                                <li class="infomation-item">
+                                    <a href="#" class="infomation-head">
+                                        <i class="ti-user"><span class="infomation-name">Hạng: </span></i>
+                                        <span class="infomation-result">VIP</span>
+                                    </a>
+                                </li>
+
+                                <li class="infomation-item">
+                                    <a href="#" class="infomation-head">
+                                        <i class="ti-pulse"><span class="infomation-name">Điểm: </span></i>
+                                        <span class="infomation-result">50 điểm</span>
+                                    </a>
+                                </li>
+
+                                <li class="infomation-item">
+                                    <a href="#" class="infomation-head">
+                                        <i class="ti-shopping-cart-full"><span class="infomation-name">Đơn đã mua: </span></i>
+                                        <span class="infomation-result">30</span>
+                                    </a>
+                                </li>
+
+                                <li class="infomation-item">
+                                    <a href="#" class="infomation-head">
+                                        <i class="ti-close"><span class="infomation-name">Đăng Xuất</span></i>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+                </li>
+                <li onclick="clicks('shopping-cart')"><span id="ti-shopping-cart" class="ti-shopping-cart btn-shop">
+                    <span class="noticarts">3</span>
+                </span>
+                </li>
+            </ul>
+            <ul id="nav">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a>
+                <ul class="sub-nav">
+                    <div class="sub-nav-nav-all-sp">
+                        <li class="sub-nav-title">Tất cả sản phẩm</li>
+                        <li><a href="sanpham.html">TẤT CẢ SẢN PHẨM | ALL</a></li>
+                        <li><a href="sanpham.html">ÁO | CLOTHES</a></li>
+                        <li><a href="sanphan.html">QUẦN | PANTS</a></li>
+                        <li><a href="sanpham.html">PHỤ KIỆN | ACCESSORIES</a></li>
+                    </div>
+                    <div class="col-2 sub-nav-phu-kien">
+                        <li class="sub-nav-title">Phụ kiện</li>
+                            <li><a href="">BAG | TÚI</a></li>
+                            <li><a href="">BACKPACKS | BALO</a></li>
+                            <li><a href="">CAP | NÓN</a></li>
+                            <li><a href="">MASK | KHẨU TRANG</a></li>
+                            <li><a href="">SOCKS | VỚ</a></li>
+                    </div>
+                    
+                </ul>
+                </li>
+                <li><a href="page.html">Giới thiệu</a></li>
+                <li><a href="#">Sự kiện mới nhất</a></li>
+                <li><a href="page.html">Hệ thống cửa hàng</a>
+                    <ul class="sub-nav">
+                        <div class="sub-nav-nav-all-sp">
+                            <li class="sub-nav-title">Hệ thống cửa hàng</li>
+                            <li><a href="">HCM - Q.Phú Nhuận: 43 Huỳnh Văn Bánh</a></li>
+                            <li><a href="">HCM - Q.Tân Phú: 905 Lũy Bán Bích</a></li>
+                            <li><a href="">HCM - Q.3: 224 Lý Chính Thắng</a></li>
+                            <li><a href="">HCM - Q.1: 90 Lê Lai (TNP)</a></li>
+                            <li><a href="">HÀ NỘI - Đống Đa: 117 Đông Các</a></li>
+                            <li><a href="">HÀ NỘI - Hai Bà Trưng: Tầng 7 Vincom Bà Triệu (TNP)</a></li>
+                            <li><a href="">ĐÀ NẴNG - Hải Châu: 126 Lê Duẩn (MSS)</a></li>
+                            <li><a href="">BIÊN HOÀ - 235 Phan Trung (MSS)</a></li>
+                            <li><a href="">CẦN THƠ - Q.Ninh Kiều 15 Nguyễn Việt Hồng (MSS)</a></li>
+                        </div>
+                    </ul>
+                    </li>
+                <li><a href="#">Hướng dẫn đặt hàng</a></li>
+            </ul>
+        </div>
         <div id="header-sub">
             <h1 class="header-title-general">
                 ĐĂNG KÝ
@@ -41,8 +149,14 @@
                     <p>Giới tính: </p>
                     <div class="w-100p">
                        
-                        <input type="radio" name="Nam" id="" value="Nam"  >
-                        <input type="radio" name="" id="" value="Nữ">
+                        <label for="Nam">
+                        <input type="radio" name="gt" id="Nam" value="Nam"  >
+                        Nam
+                    </label>
+                    <label for="Nu">
+                        <input type="radio" name="gt" id="Nu" value="Nữ">
+                        Nữ
+                    </label>
                     </div>
 
                     <div class="form-col-2">
@@ -73,6 +187,6 @@
                 alert(0);
             }
         })
-    </script>;
+    </script>
 </body>
 </html>

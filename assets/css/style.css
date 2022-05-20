@@ -369,7 +369,7 @@ transition: all 0.5s;
 }
 .end-banner .end-img-1,
 .sub-nav .sub-nav-nav-all-sp{
-    width: 300px;
+    width: 100%;
     flex:1;
     cursor: pointer;
     float:left !important;
