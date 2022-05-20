@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header-heading">
+                <h1 class="heading-title">ADMIN</h1>
+                <i onclick="clicks('left')" class="ti-menu-alt icon-menu"></i>
+            </div>
+        </div>
+        <div id="left" class="left">
+            <ul class="nav-admin">
+                <li class="nav-admin_title">Hệ thống quản lý</li>
+                <li class="nav-admin_Item">
+                    <a href="#" class="Item-link">Quản lý danh mục</a>
+                    <ul class="admin-subnav">
+                        <li class="nav-admin_Item">
+                            <a href="#" class="Item-link">Danh mục cấp 1</a>
+                        </li>
+                        <li class="nav-admin_Item">
+                            <a href="#" class="Item-link">Danh mục cấp 2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-admin_Item">
+                    <a href="#" class="Item-link">Quản lý sản phẩm</a>
+                </li>
+                <li class="nav-admin_Item">
+                    <a href="#" class="Item-link">Đăng sản phẩm</a>
+                </li>
+                <li class="nav-admin_Item">
+                    <a href="#" class="Item-link">Quản lý đơn hàng</a>
+                </li>
+                <li class="nav-admin_Item">
+                    <a href="#" class="Item-link">Đơn hàng đang được giao</a>
+                </li>
+                <li class="nav-admin_Item">
+                    <a href="#" class="Item-link">Quản lý khách hàng</a>
+                </li>
+                <li class="nav-admin_title">Chỉnh sửa NAVBAR</li>
+                <li class="nav-admin_Item">
+                    <a href="#" class="Item-link">Hệ thống cửa hàng</a>
+                </li>
+                <li class="nav-admin_Item">
+                    <a href="#" class="Item-link">Thay đổi logo</a>
+                    
+                </li>
+                <li class="nav-admin_Item">
+                    <a href="#" class="Item-link">Chỉnh sửa footer</a>
+                </li>
+                <li class="nav-admin_Item">
+                    <a href="#" class="Item-link">Giới thiệu</a>
+                </li>
+                <li class="nav-admin_Item">
+                    <a href="#" class="Item-link">Quản lý sự kiện</a>
+                </li>
+
+                <li class="nav-admin_Item">
+                    <a href="#" class="Item-link">Hướng dẫn đặt hàng</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+<script>
+    function clicks(a){
+        var as=document.getElementById(a);
+    if(as.style.left==="-20%"){
+        as.style.opacity=1;
+        as.style.left="0";
+    }
+        else{
+            as.style.opacity=0;
+        as.style.left="-20%";
+        }
+    }
+</script>
+</html>

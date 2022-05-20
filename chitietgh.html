@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widthread=device-widthread, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/products.css">
+    <link rel="stylesheet" href="/assets/themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header-sub">
+            <h1 class="header-title-general">
+               Giỏ Hàng
+            </h1>
+        </div>
+        <div id="container">
+            <table class="table">
+                <thead>
+                    <th></th>
+                    <th>Sản phẩm</th>
+                    <th>Giá tiền</th>
+                    <th>số lượng</th>
+                    <th>Tổng</th>
+                </thead>
+                <tr>
+                    <td><i class="ti-close close-click"></i></td>
+                    <td><div style="display: flex;"><div class="img-carts"><img src="./assets/img/sanpham/small/anh5-1.jpeg" alt="" class="img-product-carts"></div><span class="tenProduct-carts">Tên Món hàng</span></div></td>
+                    <td><b>500.000</b></td>
+                    <td><input type="number" class="product-infomation_soluong txtNumber-carts" name="" id="MS"></td>
+                    <td><b id="totalP">500.000</b></td>
+                </tr>
+            </table>
+            <h2 style="text-align: right;font-size: 38px;"><span style="color:#898989;font-size:20px">Tổng Tiền: </span id="totalAll">500.000</h2>
+            <div class="button-2">
+                <input type="button" class="addGiohang" value="Thanh Toán">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var element=document.getElementsByClassName("txtNumber-carts");
+    for(var i=0;i<element.length;i++){
+        element[i].oninput=function(e){
+            console.log(e.target.id);
+            
+        }
+    }
+</script>
+</html>

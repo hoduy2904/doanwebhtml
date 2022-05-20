@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+    <title>DEGREY - SHOP</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <img src="./assets/img/logo.png" alt="Logo" class="logo-nav">
+            <ul class="tool-kit">
+                <li><span id="btn-search" class="ti-search btn-search">
+                </span>
+                <input id="input-search" type="text" placeholder="Tìm kiếm sản phẩm..." name="" id="" class="tool-kit_input-search">
+            </li>
+                <li><span class="ti-layers-alt profile-main">
+
+                    <div class="profile">
+                        <div class="profile-not_login dp-none"> 
+                            <h2 class="profile-title">Đăng Nhập</h2>
+                            <div class="profile_form-login">
+                                <input class="form-login" placeholder="Nhập tài khoản" type="text" name="" id="">
+
+                                <input class="form-login" placeholder="Nhập mật khẩu" type="password" name="" id="">
+                                
+                            </div>
+
+                            <input type="button" class="btn btn-login" value="Đăng Nhập">
+                            <span>Chưa có tài khoản <a href="#">Đăng ký ngay</a></span>
+                        </div>
+                        <div class="profile-login ">
+                            <div class="profile-user">
+                                <img src="./assets/img/h2_cate_3.jpg" alt="" class="profile-image">
+                                <p class="name-user">Ngô Thanh Bắp</p>
+                            </div>
+                            <ul class="proifle-infomation">
+                                <li class="infomation-item">
+                                    <a href="#" class="infomation-head">
+                                        <i class="ti-user"><span class="infomation-name">Hạng: </span></i>
+                                        <span class="infomation-result">VIP</span>
+                                    </a>
+                                </li>
+
+                                <li class="infomation-item">
+                                    <a href="#" class="infomation-head">
+                                        <i class="ti-pulse"><span class="infomation-name">Điểm: </span></i>
+                                        <span class="infomation-result">50 điểm</span>
+                                    </a>
+                                </li>
+
+                                <li class="infomation-item">
+                                    <a href="#" class="infomation-head">
+                                        <i class="ti-shopping-cart-full"><span class="infomation-name">Đơn đã mua: </span></i>
+                                        <span class="infomation-result">30</span>
+                                    </a>
+                                </li>
+
+                                <li class="infomation-item">
+                                    <a href="#" class="infomation-head">
+                                        <i class="ti-close"><span class="infomation-name">Đăng Xuất</span></i>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+                </li>
+                <li onclick="clicks('shopping-cart')"><span id="ti-shopping-cart" class="ti-shopping-cart btn-shop">
+                    <span class="noticarts">3</span>
+                </span>
+                </li>
+            </ul>
+            <ul id="nav">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a>
+                <ul class="sub-nav">
+                    <div class="sub-nav-nav-all-sp">
+                        <li class="sub-nav-title">Tất cả sản phẩm</li>
+                        <li><a href="sanpham.html">TẤT CẢ SẢN PHẨM | ALL</a></li>
+                        <li><a href="sanpham.html">ÁO | CLOTHES</a></li>
+                        <li><a href="sanphan.html">QUẦN | PANTS</a></li>
+                        <li><a href="sanpham.html">PHỤ KIỆN | ACCESSORIES</a></li>
+                    </div>
+                    <div class="col-2 sub-nav-phu-kien">
+                        <li class="sub-nav-title">Phụ kiện</li>
+                            <li><a href="">BAG | TÚI</a></li>
+                            <li><a href="">BACKPACKS | BALO</a></li>
+                            <li><a href="">CAP | NÓN</a></li>
+                            <li><a href="">MASK | KHẨU TRANG</a></li>
+                            <li><a href="">SOCKS | VỚ</a></li>
+                    </div>
+                    
+                </ul>
+                </li>
+                <li><a href="page.html">Giới thiệu</a></li>
+                <li><a href="#">Sự kiện mới nhất</a></li>
+                <li><a href="page.html">Hệ thống cửa hàng</a>
+                    <ul class="sub-nav">
+                        <div class="sub-nav-nav-all-sp">
+                            <li class="sub-nav-title">Hệ thống cửa hàng</li>
+                            <li><a href="">HCM - Q.Phú Nhuận: 43 Huỳnh Văn Bánh</a></li>
+                            <li><a href="">HCM - Q.Tân Phú: 905 Lũy Bán Bích</a></li>
+                            <li><a href="">HCM - Q.3: 224 Lý Chính Thắng</a></li>
+                            <li><a href="">HCM - Q.1: 90 Lê Lai (TNP)</a></li>
+                            <li><a href="">HÀ NỘI - Đống Đa: 117 Đông Các</a></li>
+                            <li><a href="">HÀ NỘI - Hai Bà Trưng: Tầng 7 Vincom Bà Triệu (TNP)</a></li>
+                            <li><a href="">ĐÀ NẴNG - Hải Châu: 126 Lê Duẩn (MSS)</a></li>
+                            <li><a href="">BIÊN HOÀ - 235 Phan Trung (MSS)</a></li>
+                            <li><a href="">CẦN THƠ - Q.Ninh Kiều 15 Nguyễn Việt Hồng (MSS)</a></li>
+                        </div>
+                    </ul>
+                    </li>
+                <li><a href="#">Hướng dẫn đặt hàng</a></li>
+            </ul>
+        </div>
+        <div id="banner">
+            <div id="shopping-cart" class="shopping-cart">
+                       <div class="shoppping-card_noItem dp-none">
+                           <h4 class="card_noItem-title">Chưa có sản phẩm nào</h4>
+                       </div>
+                       <div class="shopping-card_haveItem">
+                           <div class="shopping-cart_heading">
+                               <h5 class="shopping-card_heading-title">Giỏ hàng của bạn</h5>
+                           </div>
+                           <div class="shopping-card_listItem">
+                               <div class="shopping-card_Item">
+                                   <img src="./assets/img/sanpham/small/anh3-2.jpg" alt="" class="cart_image-product">
+                                   <div class="shopping-card_ITem_infomation">
+                                       <div class="Item_infomation">
+                                           <a href="#" class="name-product">Tên sản phẩm</a>
+                                           <span class="price-product">300.000</span>
+                                       </div>
+                                       <div class="Item_infomation">
+                                           <span class="classify-product">Phân loại hàng: Áo</span>
+                                            <a href="#" class="delete">Xóa</a>
+                                       </div>
+                                       <div class="Item_infomation">
+                                        <span class="classify-product">Số lượng: 1</span>
+                                    </div>
+                                   </div>
+                               </div>
+                         
+                           </div>
+                           <div class="shopping-cart_footer">
+                            <a href="#" class="shopping-card_footer-more">Xem Thêm</a>
+                        </div>
+                       </div>
+            </div>
+            <div class="banner-main col-2">
+                <div class="banner-phu">
+            <img src="./assets/img/h2_cate_1.gif" alt="" class="banner-1"> 
+                </div>              
+             </div>
+            <div class="banner-2-tool col-2">
+                <div class="banner-phu col-2">
+                    <a href="#" class="absolute-link"></a>
+                     <img src="./assets/img/h2_cate_2.jpg" alt="" class="col-2 banner-2">
+                     <div class="title-menu">
+                         <h2 class="title-main">
+                            Hệ thống cửa hàng
+                         </h2>
+                         <p class="title-sub">
+                             xoài béo ở đây
+                         </p>
+                     </div>
+                </div>
+                 <div class="banner-phu col-2">
+                    <a href="#" class="absolute-link"></a>
+                    <img src="./assets/img/h2_cate_3.jpg" alt="" class="col-2 banner-3">
+                    <div class="title-menu">
+                        <h2 class="title-main">
+                           Hệ thống cửa hàng
+                        </h2>
+                        <p class="title-sub">
+                            xoài béo ở đây
+                        </p>
+                    </div>
+                </div>
+                <div class="banner-phu col-2">
+                    <a href="#" class="absolute-link"></a>
+                    <img src="./assets/img/h2_cate_4.jpg" alt="" class=" col-2 banner-4">
+                    <div class="title-menu">
+                        <h2 class="title-main">
+                           Hệ thống cửa hàng
+                        </h2>
+                        <p class="title-sub">
+                            xoài béo ở đây
+                        </p>
+                    </div>
+                </div>
+                <div class="banner-phu col-2">
+                    <a href="#" class="absolute-link"></a>
+                    <img src="./assets/img/h2_cate_5.jpg" alt="" class="col-2  banner-5">
+                    <div class="title-menu">
+                        <h2 class="title-main">
+                           Hệ thống cửa hàng
+                        </h2>
+                        <p class="title-sub">
+                            xoài béo ở đây
+                        </p>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <div id="content">
+            <div class="list-san-pham">
+                <div class="col-4 item-san-pham">
+                    <img src="./assets/img/sanpham/834fd01d-0cf6-4631-bd97-b1f91f3792b7_96bb55f6f66a499a96c9328521145ed8_1024x1024.jpeg" alt="" class=" img-san-pham">
+                    <p class="tinhtrang-sp">Đặt hàng trước</p>
+                    <div class="list-picture-small">
+                            <img src="./assets/img/sanpham/small/0ad58284-7e35-43f4-bb9e-82b44876c04e_608a4b86ec2a42fcbb59627a18ef1260.jpeg" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/small/b3ad2369-60c1-4b0a-9833-2a00ecfe1d09_d59b12c898664cf5b3b7fd885050d1a2.jpeg" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/small/dbf5544c-9d22-4275-b593-6fca332e73cc_3be5a4a866a54cfb8b1eb3e730547336.jpeg" alt="" class="picture-small">
+                    </div>
+                    <p class="title-san-pham text-center text-bold">
+                        Áo khoác Degrey Thêu Vàng - AKDV
+                    </p>
+                    <p class="price-san-pham text-center text-bold">
+                        450.000 VNĐ
+                    </p>
+                    <div class="cartLayout">
+                        <a href="#" style="position: absolute;width: 100%;height: 100%;"></a>
+                    <ul class="cartsTools">
+                        <li>Thêm vào giỏ hàng</li>
+                        <li>Mua ngay</li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="col-4 item-san-pham">
+                    <img src="./assets/img/sanpham/small/anh2-1.jpeg" alt="" class=" img-san-pham">
+                    <p class="tinhtrang-sp">Đặt hàng trước</p>
+                    <div class="list-picture-small">
+                            <img src="./assets/img/sanpham/small/anh2-1.jpeg" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/small/anh2-2.jpeg" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/bang-size.jpeg" alt="" class="picture-small">
+                    </div>
+                    <div>
+                    <p class="title-san-pham text-center text-bold">
+                        Áo Khoác Vai Trắng - AKVT
+                    </p>
+                    <p class="price-san-pham text-center text-bold">
+                        450.000 VNĐ
+                    </p>
+                </div>
+                </div>
+
+                <div class="col-4 item-san-pham">
+                    <img src="./assets/img/sanpham/small/anh3-1.jpg" alt="" class=" img-san-pham">
+                    <p class="tinhtrang-sp">Đặt hàng trước</p>
+                    <div class="list-picture-small">
+                            <img src="./assets/img/sanpham/small/anh3-1.jpg" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/small/anh3-2.jpg" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/bang-size.jpeg" alt="" class="picture-small">
+                    </div>
+                    <p class="title-san-pham text-center text-bold">
+                        Áo Khoác Nấm Degrey - AKND
+                    </p>
+                    <p class="price-san-pham text-center text-bold">
+                        450.000 VNĐ
+                    </p>
+                </div>
+
+                <div class="col-4 item-san-pham">
+                    <img src="./assets/img/sanpham/small/anh4-1.jpeg" alt="" class=" img-san-pham">
+                    <p class="tinhtrang-sp">Đặt hàng trước</p>
+                    <div class="list-picture-small">
+                            <img src="./assets/img/sanpham/small/anh4-1.jpeg" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/bang-size.jpeg" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/small/anh4-2.jpeg" alt="" class="picture-small">
+                    </div>
+                    <p class="title-san-pham text-center text-bold">
+                        Áo Khoác Hoả Tiễn Đen - RJB
+                    </p>
+                    <p class="price-san-pham text-center text-bold">
+                        450.000 VNĐ
+                    </p>
+                </div>
+                <div class="col-4 item-san-pham">
+                    <img src="./assets/img/sanpham/small/anh5-1.jpeg" alt="" class=" img-san-pham">
+                    <p class="tinhtrang-sp">Đặt hàng trước</p>
+                    <div class="list-picture-small">
+                            <img src="./assets/img/sanpham/small/anh4-1.jpeg" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/bang-size.jpeg" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/small/anh4-2.jpeg" alt="" class="picture-small">
+                    </div>
+                    <p class="title-san-pham text-center text-bold">
+                        Áo Khoác Hoả Tiễn Đen - RJB
+                    </p>
+                    <p class="price-san-pham text-center text-bold">
+                        450.000 VNĐ
+                    </p>
+                </div>
+                <div class="col-4 item-san-pham">
+                    <img src="./assets/img/sanpham/small/anh6-1.gif" alt="" class=" img-san-pham">
+                    <p class="tinhtrang-sp">Đặt hàng trước</p>
+                    <div class="list-picture-small">
+                        <img src="./assets/img/sanpham/small/anh6-1.gif" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/small/anh6-2.jpeg" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/small/anh6-3.jpg" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/small/anh6-4.jpeg" alt="" class="picture-small">
+                            <img src="./assets/img/sanpham/bang-size.jpeg" alt="" class="picture-small">
+                    </div>
+                    <p class="title-san-pham text-center text-bold">
+                        Áo Khoác Hoả Tiễn Đen - RJB
+                    </p>
+                    <p class="price-san-pham text-center text-bold">
+                        450.000 VNĐ
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div> 
+        </div>
+        <div id="banner-foot">
+            <div class="end-banner">
+                <div class="end-banner-main col-2">
+                    <a href="#" class="absolute-link"></a>
+                    <img src="./assets/img/featureds_2_1_bg.jpg" alt="" class="col-2 end-img-1">
+                         <div class="title-menu">
+                             <i class="title-news ti-book"></i>
+                        <h2 class="title-main">
+                           Tin Tức
+                        </h2>
+                        <p class="title-sub">
+                            Xem nhiều tin tức mới hơn
+                        </p>
+                    </div>
+                </div>
+                <div class="end-banner-main col-2">
+                    <a href="#" class="absolute-link"></a>
+                    <img src="./assets/img/featureds_2_2_bg.jpg" alt="" class="col-2 end-img-2">
+                                             <div class="title-menu">
+                                                 <i class="title-news ti-home"></i>
+                        <h2 class="title-main">
+                           Cửa hàng
+                        </h2>
+                        <p class="title-sub">
+                            Vào đây xem hệ thống cửa hàng ở mình nào
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <form class="form-newsletter">
+                    <h2 class="title-contact">Hỗ trợ giao hàng với hoá đơn trên 150.000 VNĐ</h2>
+                    <div class="form-email">
+                        <input type="email" required placeholder="Email của bạn...." class="email col-2" name="" id="">
+                        <input type="submit" class="btn col-2" value="Theo Dõi">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script>
+    var search=document.getElementById("btn-search");
+    var input=document.getElementById("input-search");
+    search.onclick=function(){
+        if(input.style.display==="none")
+        input.style.display="block";
+        else
+        input.style.display="none";
+    }
+</script>
+<script>
+    function clicks(a){
+        var as=document.getElementById(a);
+    if(as.style.display==="block")
+        as.style.display="none";
+        else
+        as.style.display="block";
+    }
+</script>
+</html>

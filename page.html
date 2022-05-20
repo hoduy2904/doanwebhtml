@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/products.css">
+    <title>Document</title>
+    <style>
+        .tracking{
+            box-shadow: 0 0 10px rgb(0 0 0 / 6%);
+    padding: 50px;
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    border-radius: 5px;
+        }
+        .mt-10{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header-sub">
+            <h1 class="header-title-general">
+                Tra cứu đơn hàng
+            </h1>
+        </div>
+        <div id="container" style="height: 100px; margin-top: 50px;">
+            <div class="container-about tracking">
+                <input type="text" placeholder="Nhập mã đơn hàng cần tra cứu" style="flex:7" class="email">
+                <input type="button" value="Tra đơn" style="flex:1" class="btn">
+               </div>
+               <div class="container-about tracking  mt-10 dp-none" style="display: block;">
+                   <h2 style="text-align: center; padding: 50px;">Thông tin đơn hàng</h2>
+                   <table class="table">
+                    <thead>
+                        <th>Sản phẩm</th>
+                        <th>Giá tiền</th>
+                        <th>số lượng</th>
+                        <th>Tổng</th>
+                    </thead>
+                    <tr>
+                        <td><div style="display: flex;"><div class="img-carts"><img src="./assets/img/sanpham/small/anh5-1.jpeg" alt="" class="img-product-carts"></div><span class="tenProduct-carts">Tên Món hàng</span></div></td>
+                        <td><b>500.000</b></td>
+                        <td>1</td>
+                        <td><b id="totalP">500.000</b></td>
+                    </tr>
+                </table>
+                <h2 style="text-align: right;font-size: 38px;"><span style="color:#898989;font-size:20px">Tổng Tiền: </span id="totalAll">500.000</h2>
+                
+                </div>
+                <div class="container-about tracking  mt-10" style="display: block; margin-bottom: 10px;">
+                    <p style="text-align: center; padding: 0;color: #3339;">Đơn hàng không hợp lệ</p>
+                    
+                 </div>
+               
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+  <script src="./assets/jquery-1.8.3.min.js" ></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header-sub">
+            <h1 class="header-title-general">
+                ĐĂNG KÝ
+            </h1>
+        </div>
+        <div id="container">
+            <div class="container-about">
+                <form>
+                   <p>Tài khoản: </p>
+                    <input type="text" class="product-infomation_soluong w-100p p-15-20" placeholder="Nhập tên tài khoản">
+                    <p>Họ Và Tên: </p>
+                    <input type="text" class="product-infomation_soluong w-100p p-15-20" placeholder="Nhập tên tài khoản">
+                    
+                    <div class="form-col-2">
+                        <div class="w-100p mr-10">
+                            <p>Email: </p>
+                    <input type="email" required class=" product-infomation_soluong w-100p p-15-20" placeholder="Nhập tên tài khoản">
+                    
+                        </div>
+                        <div class="w-100p">
+                            <p>Số điện thoại: </p>
+                    <input type="number" class="product-infomation_soluong w-100p p-15-20" placeholder="Nhập tên tài khoản">
+                    
+                        </div>
+                        
+                    </div>
+
+                    <p>Giới tính: </p>
+                    <div class="w-100p">
+                       
+                        <input type="radio" name="Nam" id="" value="Nam"  >
+                        <input type="radio" name="" id="" value="Nữ">
+                    </div>
+
+                    <div class="form-col-2">
+                        <div class="w-100p mr-10">
+                            <p>Nhập mật khẩu: </p>
+                    <input type="password" class=" product-infomation_soluong w-100p p-15-20" placeholder="Nhập tên tài khoản">
+                    
+                        </div>
+                        <div class="w-100p">
+                            <p>Nhập lại mật khẩu: </p>
+                    <input type="password" class="product-infomation_soluong w-100p p-15-20" placeholder="Nhập tên tài khoản">
+                    
+                        </div>
+                        
+                </div>
+                <p>Địa chỉ: </p>
+                    <input type="text" class="product-infomation_soluong w-100p p-15-20" placeholder="Nhập tên tài khoản">
+                    
+                <button class="mt-20 btn btn-primary">Đăng Ký</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        $('input[type=password]:last').(function(){
+            if($(this).text==$('input[type=password]:first').text)
+            alert(1);
+            else{
+                alert(0);
+            }
+        })
+    </script>;
+</body>
+</html>

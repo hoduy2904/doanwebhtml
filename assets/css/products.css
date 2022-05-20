@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 5s;
+}
+html{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+.product{
+    display: flex;
+}
+.product-image{
+    flex:1;
+}
+.product-infomation{
+    flex: 1;
+    margin-left: 60px;
+}
+.image-product-small:focus{
+    border: 2px solid #cdcdcd;
+
+}
+.product-infomation_title{
+}
+.title-main{
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+.border{
+    border: 2px solid red;
+}
+.title-sub{
+    margin-bottom: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+.single-option-selector{
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: 1px solid #cdcdcd;
+    color:rgb(105, 105, 105);
+    outline-width: 0;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.product-infomation_soluong{
+    width: 50px;
+    padding: 10px 20px;
+    border: 1px solid #cdcdcd;
+    color:rgb(105,105,105);
+    outline-width: 0;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.text-soluong{
+    font-size: 8px;
+    letter-spacing: 8px;
+    color:rgb(105,105,105);
+    font-weight: 600;
+    text-align: center;
+    margin-left: 5px;
+}
+.price-product{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.addGiohang{
+    padding: 15px 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color:white;
+    background-color: #000;
+    border: none;
+    font-size: 12px;
+
+}
+.addGiohang:hover{
+    background-color: sandybrown;
+}
+.more{
+    cursor: pointer;
+}
+.describe-sub{
+    display: none;
+    opacity: 0.7;
+    font-size: 15px;
+    margin-top: 20px;
+    animation: inOut linear 0.5s;
+}
+@keyframes inOut{
+    from{
+        margin: 0;
+        opacity: 0;
+    }
+    to{
+        margin-top: 20px;
+        opacity: 1;
+    }
+}
+.product-infomation_describe{
+    margin-top: 70px;
+}
+.describe-describe_title{
+    justify-content: space-between;
+    display: flex;
+}
+.describe-describe{
+    margin-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.category{
+    display: block;
+    margin: 15px 0;
+    font-size: 13px;
+    color:#333;
+    font-weight: 600;
+}
+.describe-share_title{
+    margin-bottom: 10px;
+}
+.social +.social{
+    margin-left: 20px;
+}
+.link-map{
+    text-decoration: none;
+    color:#646464;
+    font-weight: 400;
+}
+.image-product-large{
+    width: 100%;
+}
+.image-product-sub{
+    display: flex;
+    justify-content: center;
+}
+.image-product-sub .image-product-small img{
+    width: 100%;
+}
+.image-product-small{ 
+    margin: 10px;
+    flex:1;
+}
+.image-product-large{
+    width: 100%;
+}
+.image-product_main{
+    width: 100%;
+}
+.product-related{
+    position: relative;
+    margin: 80px 0;
+    display: block;
+    text-align: center;
+}
+.related-title{
+   display: inline-block;
+   margin-bottom: 0;
+   padding: 0 30px;
+   position: relative;
+   z-index: 4;
+   background-color: #fff;
+   font-size: 30px;
+}
+.product-related::after{
+    z-index: 1;
+    content: "";
+    top:18px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    border-bottom: 1px solid #cdcdcd;
+
+}
+.pavigation
+{
+    border: 1px solid #cdcdcd;
+    background-color: #cdcdcd;
+    color:#333;
+    padding: 5px;
+}
+/*
+Gio Hàng
+*/
+.table{
+    border-spacing: 0;
+    width: 100%;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+.table th{
+    font-size:14px;
+    text-align: left;
+    color: #5e5e5e;
+    border-bottom: 3px solid #cdcdcd;
+    padding: 8px 0;
+}
+.table tr{
+    text-align: left;
+}
+.table tr:hover >td .close-click{
+    opacity: 1;
+    visibility: visible;
+}
+.table tr td{
+    padding: 8px 0;
+}
+.close-click{
+    visibility: hidden;
+    opacity: 0;
+    font-size:12px;
+    cursor: pointer; 
+}
+.close-click:hover{
+    color:sandybrown;
+}
+.img-carts{
+    display: flex;
+    flex-direction: row;
+    max-width: 120px;
+    max-height: 120px;
+}
+.img-product-carts{
+    max-width: 100%;
+    max-height: 100%;
+}
+.tenProduct-carts{
+    align-self: center;
+    flex: 1;
+    padding: 0 20px;
+}
+.button-2{
+    float:right;
+    margin: 30px 0;
+}
+.txtNumber-carts{
+    text-align: center;
+    width: 80px !important;
+    padding-right: 5px;
+}
